@@ -9,7 +9,7 @@
     <atom:link href="https://moneyhua.github.io/yiyuanqian_blog/rss2.xml" rel="self" type="application/rss+xml"/>
     
     <description>yiyuaqian的博客</description>
-    <pubDate>Sun, 25 Aug 2024 14:11:58 GMT</pubDate>
+    <pubDate>Mon, 26 Aug 2024 14:49:39 GMT</pubDate>
     <generator>http://hexo.io/</generator>
     
     <item>
@@ -135,7 +135,8 @@
         
           
           
-      <description>&lt;p&gt;ADB</description>
+      <description>&lt;p&gt;ADB Interface 是一个安卓设备连接 PC（windows 系统）时所需要的驱动程序。&lt;/p&gt;
+&lt;p&gt;使用安卓设备连接 PC（windows 系统）时，PC</description>
           
         
       
@@ -220,7 +221,7 @@
           
           
       <description>&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
-&lt;p&gt;nginx是一款高性能、轻量级的Http和反向代理web服务器软件。&lt;/p&gt;
+&lt;p&gt;nginx 是一款高性能、轻量级的 Http 和反向代理 web 服务器软件。&lt;/p&gt;
 &lt;h2</description>
           
         
@@ -278,7 +279,8 @@
         
           
           
-      <description>&lt;h2</description>
+      <description>&lt;h2 id=&quot;GPU&quot;&gt;GPU&lt;/h2&gt;
+&lt;p&gt;GPU（图形处理单元）是一种专门为图形处理而设计的处理器。主要作用是染图像、视频和动画，以提高视觉效果和性能。GPU 主要由显示主芯片、显示缓冲存储器、RAMD/A</description>
           
         
       
@@ -390,7 +392,8 @@
         
           
           
-      <description>&lt;h2</description>
+      <description>&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;在 app 使用过程中，认证是指 app 对用户身份进行验证，如账号密码登录、验证码登录、手机短信登录等各种登录认证方式；授权是指&lt;strong&gt;已认证&lt;/strong&gt;的用户对第三方（app</description>
           
         
       
