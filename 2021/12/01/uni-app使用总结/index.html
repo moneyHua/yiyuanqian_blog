@@ -1,0 +1,247 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta name="baidu-site-verification" content="code-XJk0HRiX1O"><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description" content="yiyuaqian的博客"><title>uni-app框架使用指南</title><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/style.css?v=1.0.0"><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/normalize.min.css"><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/pure-min.min.css"><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/grids-responsive-min.css"><link rel="stylesheet" href="/yiyuanqian_blog/css/font-awesome.min.css"><script type="text/javascript" src="/yiyuanqian_blog/css/jquery.min.js"></script><link rel="icon" mask="" sizes="any" href="/yiyuanqian_blog/favicon.ico"><link rel="Shortcut Icon" type="image/x-icon" href="/yiyuanqian_blog/favicon.ico"><link rel="apple-touch-icon" href="/yiyuanqian_blog/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/yiyuanqian_blog/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/yiyuanqian_blog/atom.xml,rss2.xml"><script type="text/javascript" src="/yiyuanqian_blog/css/clipboard.min.js"></script><script type="text/javascript" src="/yiyuanqian_blog/css/toastr.min.js"></script><link rel="stylesheet" href="/yiyuanqian_blog/css/toastr.min.css"><meta name="generator" content="Hexo 5.4.2"></head><body><div class="body_container"><div id="header"><div id="nav-menu"><a class="current" href="/yiyuanqian_blog/."><i class="fa fa-home"> 首页</i></a><a href="/yiyuanqian_blog/archives/"><i class="fa fa-archive"> 归档</i></a><a href="/yiyuanqian_blog/tags/"><i class="fa fa-tag"> 标签</i></a><a href="/yiyuanqian_blog/about/"><i class="fa fa-user"> 关于我</i></a><a href="/yiyuanqian_blog/atom.xml"><i class="fa fa-rss"> 订阅</i></a></div></div><div class="pure-g" id="layout"><div class="pure-u-1 pure-u-md-3-4"><div class="content_container"><div class="post"><h1 class="post-title">uni-app框架使用指南</h1><div class="post-meta">2021/12/01<span> | </span><span class="category"><a href="/yiyuanqian_blog/categories/web%E5%89%8D%E7%AB%AF/">web前端</a></span><script src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script><span id="busuanzi_container_page_pv"> | <span id="busuanzi_value_page_pv"></span><span> 阅读</span></span><span class="post-time"><span class="post-meta-item-text"> | </span><span class="post-meta-item-icon"><i class="fa fa-keyboard-o"></i><span class="post-count"> 3.2k</span><span class="post-meta-item-text"> 字</span></span></span><span class="post-time"> | <span class="post-meta-item-icon"><i class="fa fa-clock-o"></i><span class="post-count"> 11</span><span class="post-meta-item-text"> 分钟</span></span></span></div><div class="clear"><div class="toc-article" id="toc"><div class="toc-title">文章目录</div><ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">简述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">学习要点</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BC%80%E5%8F%91%E7%8E%AF%E5%A2%83"><span class="toc-text">开发环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E5%92%8C%E7%BB%84%E4%BB%B6"><span class="toc-text">插件和组件</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%8F%92%E4%BB%B6%E5%88%86%E7%B1%BB"><span class="toc-text">插件分类</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%BB%84%E4%BB%B6%E5%88%86%E7%B1%BB"><span class="toc-text">组件分类</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%8A%80%E6%9C%AF%E8%A7%84%E8%8C%83"><span class="toc-text">技术规范</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%B7%A8%E7%AB%AF%E5%85%BC%E5%AE%B9"><span class="toc-text">跨端兼容</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B6%E4%BB%96"><span class="toc-text">其他</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B7%B7%E5%90%88%E5%BC%80%E5%8F%91"><span class="toc-text">混合开发</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E9%97%AE%E9%A2%98%E5%8F%8A%E8%A7%A3%E5%86%B3%E6%96%B9%E6%B3%95"><span class="toc-text">问题及解决方法</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link"><span class="toc-text">项目工程模板</span></a></li></ol></div></div><div class="post-content"><h1>简述</h1>
+<p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/">uni-app</a> 是一个基于 <a target="_blank" rel="noopener" href="https://cn.vuejs.org/">Vue</a> 的前端开发框架。同时它整合了 H5+、各大主流厂商小程序、Weex 等规范及特性，致力于用户通过最低成本(一套代码)开发出兼容 Web、IOS、Android 以及各种小程序的跨平台前端应用。<br>
+从 <a target="_blank" rel="noopener" href="https://www.dcloud.io/">DCloud</a> 官网我们可以了解到，官方不只提供了 uni-app 这个框架，还提供了详尽的开发文档、<a target="_blank" rel="noopener" href="https://www.dcloud.io/hbuilderx.html">配套 IDE</a>、组件库、各种 SaaS 化服务等一整套完整的跨平台应用开发解决方案。</p>
+<p>为了充分发挥社区的力量，官方还提供了<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/">插件市场</a>及<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/explore/">社区论坛</a>。用户可以在插件市场通过付费或免费的方式搜索获得开发过程中所需的各种插件，同样，我们也可以将自己开发的插件有偿或无偿地发布到插件市场供他人使用。我们可以在社区论坛中发布各种技术问题进行求助，也可以进行技术分享。当然，我们也可以通过付费的方式求助官方解决开发过程中遇到的问题。</p>
+<p>uni-app 官方文档在使用教程、常见开发问题解答等方面已经有十分详尽的叙述。下面将结合自己的理解对文档中的一些要点做出汇总。</p>
+<h1>学习要点</h1>
+<p>在刚开始接触 uni-app 官方文档教程时，可能会因为“丰富”的文档内容和大量的技术点，一时不知道从何学起。以下是我在使用和学习 uni-app 框架过程要总结出来的一些学习要点，希望能帮助大家高效学习 uni-app 框架。当然，官方也提供了丰富的<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/resource">视频教程</a>帮助大家更全面更高效地学习 uni-app 框架。</p>
+<p>由于 uni-app 框架是基于 Vue 且遵循其 SFC 开发规范，所以我们在使用 uni-app 框架进行开发前必须要先对 Vue 进行学习。在熟悉 Vue 后，我们就可以高效地进行 uni-app 框架的学习及开发了。建议对<a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/">微信小程序</a>开发也有所了解。因为在学习 uni-app 框架的过程中，我们会发现文档中的很多概念内容都是和微信小程序开发相同或类似的。</p>
+<h2 id="开发环境">开发环境</h2>
+<p>在开发 uni-app 时，我们必须要使用配套 IDE——<a target="_blank" rel="noopener" href="https://www.dcloud.io/hbuilderx.html">HBuilderX</a>。官方对该 IDE 的发版还是挺频繁的，建议尽量使用最新稳定版。通过该 IDE 我们可以对 uni-app 进行多端调试及发行，具体使用教程可查看<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/quickstart-hx">这里</a>。</p>
+<h2 id="插件和组件">插件和组件</h2>
+<p>现代前端开发遵循模块化、组件化的开发方式。为了实现 uni-app 的跨平台及提高应用性能，官方定义了多种类别的组件、插件及开发规范。了解清楚它们的作用、适用场景是高效开发 uni-app 的关键点之一。</p>
+<ul>
+<li>
+<h3 id="插件分类">插件分类</h3>
+<p>在这里，插件是指通过 uni-app 规范对 js 接口、自定义组件、页面等功能或服务的封装。它无法独立运行，必须要嵌入到 uni-app 中使用。通过封装插件，可以提供功能或服务给第三方使用。插件市场中包含了前端组件、JS SDK、原生 SDK 等插件。</p>
+<p>在 uni-app 文档中主要包含了<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/">前端组件</a>、<a target="_blank" rel="noopener" href="https://nativesupport.dcloud.net.cn/NativePlugin/README">App 原生插件</a>、<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/collocation/miniprogram-plugin">小程序插件</a>三种插件的开发说明，下面对它们进行简单总结：</p>
+<table>
+<thead>
+<tr>
+<th>插件类型</th>
+<th>适用平台</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>前端组件</td>
+<td>web、小程序、App</td>
+<td>可以理解成视图层相关的插件，基本都是多端兼容的。</td>
+</tr>
+<tr>
+<td>App 原生插件</td>
+<td>App</td>
+<td>使用 App 离线 SDK 开发原生插件来扩展原生能力，基于 <a target="_blank" rel="noopener" href="http://doc.weex.io/zh/guide/introduction.html">Weex</a>。</td>
+</tr>
+<tr>
+<td>小程序插件</td>
+<td>对应厂商的小程序</td>
+<td>通过 uni-app 框架可以<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/collocation/miniprogram-plugin">开发</a>或<a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/mp-weixin-plugin">使用</a>不同小程序厂商的小程序插件</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<h3 id="组件分类">组件分类</h3>
+<p>在这里，组件主要是指通过 uni-app 规范定义的一系列视图层组件(前端组件)。这些组件基本都是多端兼容的，具体使用及限制以官方文档为准。以下 uni-app 中的组件类型做出简单总结：</p>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>适用平台</th>
+<th>所用规范</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>基础组件</td>
+<td>App、小程序、web</td>
+<td>-</td>
+<td>可直接使用的内置组件，基本等同于微信小程序中的组件。</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/uniui/uni-ui">扩展组件</a></td>
+<td>App、小程序、web</td>
+<td>-</td>
+<td>除基础组件外的组件</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/frame?id=%e5%b0%8f%e7%a8%8b%e5%ba%8f%e8%87%aa%e5%ae%9a%e4%b9%89%e7%bb%84%e4%bb%b6%e6%94%af%e6%8c%81">小程序组件</a></td>
+<td>web、App、对应厂商小程序</td>
+<td>对应厂商小程序规范</td>
+<td>微信小程序组件是多端兼容的、其他小程序组件只兼容自身小程序</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/nvue-outline">nvue 组件</a></td>
+<td>App、小程序、web</td>
+<td>nvue 组件规范</td>
+<td>使 vue 组件具备原生渲染能力,App 端基于 Weex 的高性能渲染器进行渲染</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/native-component">原生组件</a></td>
+<td>App、小程序、web</td>
+<td>vue 组件规范或 nvue 组件规范</td>
+<td>又分为内置原生组件和 App 端的原生组件，开发时需要注意层级覆盖问题</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/uniCloud/unicloud-db">uniCloud 组件</a></td>
+<td>App、小程序、web</td>
+<td>vue 组件规范、uniCloud 组件规范</td>
+<td>配合 uniCloud 服务的组件</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.io/component/datacom?id=%e4%bb%80%e4%b9%88%e6%98%afdatacom">datacom 组件</a></td>
+<td>App、小程序、web</td>
+<td>vue 组件规范、datacom 组件规范</td>
+<td>对所绑定的数据格式进行规范的组件</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p>vue 页面主体在小程序端和 App 端是用 webview 渲染的，但是部分 ui 元素比如导航栏、tabbar、video、map 等是使用原生控件渲染的，所以这种方式称为混合渲染。混合渲染会存在层级覆盖的问题，具体问题描述及解决方案可查看<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/native-component">这里</a>。</p>
+<p>插件分类所说的 App 原生插件其实分为原生组件 component 和原生模块 module，都是基于 Weex 规范。App 端原生组件只能在 nvue 页面中使用。</p>
+<p>nvue 组件和 vue 组件不能相互引用，在 nvue 页面中只能使用 nvue 组件和 App 端原生组件。nvue 页面要不完全用 webview 渲染，要不完全用原生渲染，所以不存在层级覆盖问题。由于使用 nvue 技术时有较大的开发限制，所以不建议在开发非 App 应用时使用 nvue。适用在 App 端某些 vue 页面表现不佳的场景下使用 nvue 作为强化补充，如：App 端首页快速渲染、深度使用原生组件的页面、高性能的区域长列表或瀑布流滚动等。</p>
+<h2 id="技术规范">技术规范</h2>
+<p>由于 uni-app 框架是基于 Vue、Weex、微信小程序等技术的，所以框架中也用到了这些技术的开发规范。对技术规范进行整合，统一 js API 的同时，为了提高开发者效率和应用性能，官方也自定义了一些开发规范。<br>
+虽然 uni-app 框架是基于上述技术，但是不代表官方对上述技术做出 100%的实现，所以在原技术的实现或文档上会有所差异，在开发过程中要以 uni-app 官方文档为准。</p>
+<ul>
+<li>
+<p><a target="_blank" rel="noopener" href="https://cn.vuejs.org/">Vue</a> 技术规范——页面文件遵循 SFC 规范，框架已整合 Vue2 和 Vue3。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://developers.weixin.qq.com/miniprogram/dev/framework/">微信小程序技术规范</a>——uni-app 基础组件、 JS API、生命周期等就是靠近微信小程序规范。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="http://doc.weex.io/zh/guide/introduction.html">Weex</a> 技术规范——uni-app 原生插件开发规范就是基于 Weex 技术规范。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://www.html5plus.org/doc/h5p.html">HTML5+规范</a>——uni-app App 端内置 HTML5+引擎，让 js 可以直接调用丰富的原生能力。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/README?id=easycom%e7%bb%84%e4%bb%b6%e8%a7%84%e8%8c%83">easycom 组件规范</a>——uni-app 定义的组件开发规范，符合规范的组件具备自动注册、引用、按需打包的功能。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/datacom?id=datacom%e7%bb%84%e4%bb%b6%e8%a7%84%e8%8c%83">datacom 组件规范</a>——uni-app 定义的组件开发规范，用于开发统一输入输出数据格式的组件。</p>
+</li>
+<li>
+<p><a href="">nvue 技术规范</a>——符合规范的组件在 App 端使用 Weex 渲染器进行原生渲染，可以使 App 性能得到一定提高，是 Vue 页面在 App 端的性能强化补充技术。</p>
+</li>
+<li>
+<p><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/README?id=uni_module%e8%a7%84%e8%8c%83">uni_module 规范</a>——uni-app 定义的插件开发规范，符合 uni_module 规范的插件可很方便地更新已上传到插件市场的插件。</p>
+</li>
+</ul>
+<h2 id="跨端兼容">跨端兼容</h2>
+<p>uni-app 官方尽最大限度保证了常用组件、JS API 等方面的跨平台兼容，但是每个平台都会有自己的一些特性，因此会存在无法跨平台的情况。因此 uni-app 框架通过<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/platform?id=%e8%b7%a8%e7%ab%af%e5%85%bc%e5%ae%b9">条件编译</a>技术，高效地解决了不同平台的个性化差异。</p>
+<h2 id="其他">其他</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/use-html5plus">使用 HTML5+注意事项</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/matter">跨端开发注意事项</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/snippet">高效开发技巧</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/performance">性能优化建议</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/adapt">宽屏适配指南</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/select">选型评估指南</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/faq">常见问题解决</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/component/native-component?id=vue%e9%a1%b5%e9%9d%a2%e5%b1%82%e7%ba%a7%e8%a6%86%e7%9b%96%e8%a7%a3%e5%86%b3%e6%96%b9%e6%a1%88">vue 页面层级覆盖解决方案</a></li>
+<li><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/translate">其他项目转 uni-app</a></li>
+<li><a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/114">Native.js 示例汇总</a></li>
+</ul>
+<h2 id="混合开发">混合开发</h2>
+<ul>
+<li><a target="_blank" rel="noopener" href="https://nativesupport.dcloud.net.cn/README">uni 小程序 SDK</a></li>
+<li><a target="_blank" rel="noopener" href="https://nativesupport.dcloud.net.cn/NativePlugin/README">原生插件开发</a></li>
+</ul>
+<p>通过对 uni-app 框架的使用，使我对<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/hybrid">混合开发</a>及选型有了更清晰的了解。</p>
+<h2 id="问题及解决方法">问题及解决方法</h2>
+<p>在使用 uni-app 框架开发的过程中，可能会遇到各种问题，大家可以优先通过官方渠道搜索解决方案，如：<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/faq">常见问题解决</a>、<a target="_blank" rel="noopener" href="https://github.com/dcloudio/uni-app/issues">gitHub/Issues</a>、<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/explore/">社区论坛</a>，同时值得一提的是官方文档的站内搜索挺友好的。以下是对我在开发过程中遇到的问题及解决方法的总结。</p>
+<ol>
+<li>
+<p>nvue 页面和 vue 页面在应用中可以混搭、互相跳转，但是在 nvue 组件和 vue 组件不能互相混搭是引用。虽然 nvue 组件在结构和 vue 组件很相似，但实际上在很多方面是有局限性和区别的，必须要严格按照 nvue 技术规范进行开发。</p>
+</li>
+<li>
+<p>在开发 uni-app 时需求可能不需要兼容 web 端，但我认为能最起码做到对 web 端视图层的样式兼容是很有必要的，有助于我们在开发过程中的调试。</p>
+</li>
+<li>
+<p>通过 HbuilderX 新建 uni-app 项目时，我们可选择 vue 版本。如果原有 uni-app 项目想从 vue2.x 升级到 vue3.x，可查看<a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/migration-to-vue3">这里</a>和<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/37834">这里</a>。不同 vue 版本的项目工程模板所使用的 web 端编译打包技术是不一样的。</p>
+<table>
+<thead>
+<tr>
+<th>vue 版本</th>
+<th>打包技术</th>
+<th>脚手架参考</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>2.x</td>
+<td>webpack</td>
+<td><a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/config/#vue-config-js">vue-cli3</a></td>
+<td><a target="_blank" rel="noopener" href="https://uniapp.dcloud.net.cn/collocation/vue-config">配置说明</a>、<a target="_blank" rel="noopener" href="https://cli.vuejs.org/zh/guide/mode-and-env.html#%E7%8E%AF%E5%A2%83%E5%8F%98%E9%87%8F">环境变量设置</a></td>
+</tr>
+<tr>
+<td>3.x</td>
+<td>rollup</td>
+<td><a target="_blank" rel="noopener" href="https://vitejs.cn/guide/">vite</a></td>
+<td>rollup 本身是不支持 commonJS 模块化规范的，可以安装<a target="_blank" rel="noopener" href="https://www.npmjs.com/package/vite-plugin-commonjs">插件</a>提供支持。<a target="_blank" rel="noopener" href="https://vitejs.cn/guide/env-and-mode.html#env-variables">环境变量设置</a></td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>vue.config.js(vue2.x)和 vite.config.js(vue3.x) 是项目工程中的可选配置文件，但并不是所有配置项更改后都能生效，以官方说明为准。且这两个配置文件只对 web 端打包有效，如 3 中所提及的环境变量在小程序端和 App 端是不能正常使用的。</p>
+</li>
+<li>
+<p>uni-app 全局变量实现可看<a target="_blank" rel="noopener" href="https://ask.dcloud.net.cn/article/35021">这里</a>。</p>
+</li>
+<li>
+<p>当使用 HbuilderX 开启或重启调试时，可能会出现打包失败的情况(如下图)，则可以删除生成的 unpackage 里的 dist 文件夹后再启动调试。不建议直接删除 unpackage 文件夹，因为如果正在通过自定义基座进行 App 真机调试，那么自定义基座就会被删除，需要重新制作自定义基座。<br>
+<img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="/assets/20211201/1-1.png" alt="图1-1"></p>
+</li>
+<li>
+<p>当使用自定义基座进行 App 端真机调试时，如果 manifest.json 中 App 相关的配置项发生了更改都需要重新制作自定义基座。</p>
+</li>
+<li>
+<p>安卓原生插件开发时，通过 globalEvent 事件对象对原生事件进行监听，可能会出现失效的情况。通过查看源码，可通过如下方式解决。</p>
+ <figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Map&lt;String,Object&gt; params=<span class="keyword">new</span> <span class="title class_">HashMap</span>&lt;&gt;();</span><br><span class="line">params.put(<span class="string">&quot;key&quot;</span>,<span class="string">&quot;value&quot;</span>);</span><br><span class="line">mUniSDKInstance.fireModuleEvent(<span class="string">&quot;myEvent&quot;</span>, params);</span><br></pre></td></tr></table></figure>
+</li>
+<li>
+<p>安卓设备连接 PC（windows 系统）进行真机调试时，可能会出现由于未正确安装 ADB Interface 导致 Hbuilder 找不到运行设备的情况，可参考<a target="_blank" rel="noopener" href="https://yiyuanqian.gitee.io/2022/02/24/adbInterface%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%9C%E7%94%A8/">这里</a>进行解决。</p>
+</li>
+<li>
+<p>通过 App 本地离线工程制作自定义调试基座进行真机调试，如出现 Hbuilder 控制台无法打印调试信息，需检查 App 本地离线工程中的 dcloud_control.xml 文件并确保如下配置。</p>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;hbuilder debug=<span class="string">&quot;true&quot;</span> syncDebug=<span class="string">&quot;true&quot;</span>&gt;</span><br></pre></td></tr></table></figure>
+</li>
+</ol>
+<h1>项目工程模板</h1>
+<p>HBuilderX 创建的工程模板结构是比较简单，为了满足自身项目开发需要，我基于官方的基础模板配合 HBuilderX 插件搭建了一个(<a target="_blank" rel="noopener" href="https://gitee.com/yiyuanqian/nanjing-uniapp">git 仓库地址</a>)。</p>
+<ul>
+<li>
+<p>配合安装的 HBuilderX 插件：<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=eno-vue">Vue/Vuex/Vue Router 代码块</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=typescript-server">typescript 语言服务</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=compile-typescript">typescript 编译</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=validate-stylelint">stylelint</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=formator-prettier">prettier</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=eslint-vue">eslint-plugin-vue</a>、<a target="_blank" rel="noopener" href="https://ext.dcloud.net.cn/plugin?name=compile-dart-sass">dart-sass 编译</a></p>
+</li>
+<li>
+<p>工程模板能力：vue3、typeScript、prettier、eslint、husky、babel</p>
+</li>
+</ul>
+</div><div class="tags"><a href="/yiyuanqian_blog/tags/uni-app/"><i class="fa fa-tag"></i>uni-app</a></div><div class="post-nav"><a class="pre" href="/yiyuanqian_blog/2022/01/14/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%EF%BC%9A%E7%94%9F%E6%B4%BB%E3%80%81%E5%B7%A5%E4%BD%9C%E4%B8%8E%E6%80%9D%E7%BB%B4%E7%9A%84%E5%A4%A7%E5%8F%98%E9%9D%A9/">大数据时代：生活、工作与思维的大变革</a><a class="next" href="/yiyuanqian_blog/2021/10/10/nginx%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/">nginx使用小结</a></div></div></div></div><div class="pure-u-1-4 hidden_mid_and_down"><div id="sidebar"><div class="widget"><div class="search-form"><input id="local-search-input" placeholder="站内搜索" type="text" name="q" results="0"/><div id="local-search-result"></div></div></div><div class="widget"><div class="widget-title"><i class="fa fa-folder"> 分类</i></div><ul class="category-list"><li class="category-list-item"><a class="category-list-link" href="/yiyuanqian_blog/categories/web%E5%89%8D%E7%AB%AF/">web前端</a><span class="category-list-count">3</span></li><li class="category-list-item"><a class="category-list-link" href="/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/">其他</a><span class="category-list-count">6</span></li><li class="category-list-item"><a class="category-list-link" href="/yiyuanqian_blog/categories/%E5%AE%89%E5%8D%93/">安卓</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/yiyuanqian_blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a><span class="category-list-count">2</span></li><li class="category-list-item"><a class="category-list-link" href="/yiyuanqian_blog/categories/%E8%AF%BB%E4%B9%A6/">读书</a><span class="category-list-count">1</span></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-tags"> 标签</i></div><div class="tagcloud"><a href="/yiyuanqian_blog/tags/Android/" style="font-size: 15px;">Android</a> <a href="/yiyuanqian_blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/" style="font-size: 15px;">浏览器</a> <a href="/yiyuanqian_blog/tags/css3/" style="font-size: 15px;">css3</a> <a href="/yiyuanqian_blog/tags/nginx/" style="font-size: 15px;">nginx</a> <a href="/yiyuanqian_blog/tags/uni-app/" style="font-size: 15px;">uni-app</a> <a href="/yiyuanqian_blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/" style="font-size: 15px;">大数据</a> <a href="/yiyuanqian_blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/" style="font-size: 15px;">数据可视化</a> <a href="/yiyuanqian_blog/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/" style="font-size: 15px;">版本管理</a> <a href="/yiyuanqian_blog/tags/%E8%AE%A4%E8%AF%81%E6%8E%88%E6%9D%83/" style="font-size: 15px;">认证授权</a></div></div><div class="widget"><div class="widget-title"><i class="fa fa-file-text"> 最近文章</i></div><ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2023/08/18/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E6%80%BB%E7%BB%93/">语义化版本控制总结</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2023/05/15/nginx%E5%AE%B9%E5%99%A8%E5%88%9B%E5%BB%BA/">nginx容器创建</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2023/01/06/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F%E8%87%AA%E9%80%82%E5%BA%94%E5%AE%9E%E7%8E%B0/">数据可视化大屏自适应实现</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2022/03/28/Android%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E2%80%94Memory%20Profiler/">Android内存分析—Memory Profiler</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2022/02/24/adbInterface%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%9C%E7%94%A8/">ADB Interface安装与作用</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2022/01/14/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%EF%BC%9A%E7%94%9F%E6%B4%BB%E3%80%81%E5%B7%A5%E4%BD%9C%E4%B8%8E%E6%80%9D%E7%BB%B4%E7%9A%84%E5%A4%A7%E5%8F%98%E9%9D%A9/">大数据时代：生活、工作与思维的大变革</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2021/12/01/uni-app%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/">uni-app框架使用指南</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2021/10/10/nginx%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/">nginx使用小结</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2021/06/10/css3%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/">css3实现毛玻璃效果</a></li><li class="post-list-item"><a class="post-list-link" href="/yiyuanqian_blog/2020/04/20/WebGL%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%BB%93/">WebGL技术小结</a></li></ul></div><div class="widget"><div class="widget-title"><i class="fa fa-external-link-square"> 快捷链接</i></div><ul></ul><a href="https://www.huxiu.com/" title="虎嗅" target="_blank">虎嗅</a><ul></ul><a href="https://sspai.com/" title="少数派" target="_blank">少数派</a><ul></ul><a href="https://www.geekpark.net/" title="极客公园" target="_blank">极客公园</a><ul></ul><a href="https://www.ithome.com/" title="IT之家" target="_blank">IT之家</a><ul></ul><a href="https://msdn.itellyou.cn/" title="MSDN" target="_blank">MSDN</a><ul></ul><a href="https://caniuse.com/" title="caniuse" target="_blank">caniuse</a></div></div></div><div class="pure-u-1 pure-u-md-3-4"></div></div><a class="show" id="rocket" href="#top"></a><script type="text/javascript" src="/yiyuanqian_blog/js/totop.js?v=1.0.0" async></script><script type="text/javascript" src="/yiyuanqian_blog/js/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/yiyuanqian_blog/js/fancybox.js?v=1.0.0" async></script><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/jquery.fancybox.min.css"><link rel="stylesheet" type="text/css" href="/yiyuanqian_blog/css/search.css?v=1.0.0"><script type="text/javascript" src="/yiyuanqian_blog/js/search.js?v=1.0.0"></script><script>var search_path = 'search.xml';
+if (search_path.length == 0) {
+   search_path = 'search.xml';
+}
+var path = '/yiyuanqian_blog/' + search_path;
+searchFunc(path, 'local-search-input', 'local-search-result');
+</script><script type="text/javascript" color="0,0,0" opacity="0.5" zIndex="-2" count="50" src="/yiyuanqian_blog/js/canvas-nest.min.js"></script><script type="text/javascript" src="/js/copycode.js" successtext="复制成功!"></script><link rel="stylesheet" type="text/css" href="/css/copycode.css"><link rel="stylesheet" type="text/css" href="/css/external.css"><script type="text/javascript" src="/yiyuanqian_blog/js/codeblock-resizer.js?v=1.0.0"></script><script type="text/javascript" src="/yiyuanqian_blog/js/smartresize.js?v=1.0.0"></script></div>
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body></html>

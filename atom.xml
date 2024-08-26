@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>首页</title>
+  
+  
+  <link href="https://moneyhua.github.io/yiyuanqian_blog/atom.xml" rel="self"/>
+  
+  <link href="https://moneyhua.github.io/yiyuanqian_blog/"/>
+  <updated>2024-08-25T14:11:58.607Z</updated>
+  <id>https://moneyhua.github.io/yiyuanqian_blog/</id>
+  
+  <author>
+    <name>yiyuanqian</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>语义化版本控制总结</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2023/08/18/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E6%80%BB%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2023/08/18/%E8%AF%AD%E4%B9%89%E5%8C%96%E7%89%88%E6%9C%AC%E6%8E%A7%E5%88%B6%E6%80%BB%E7%BB%93/</id>
+    <published>2023-08-18T08:26:35.000Z</published>
+    <updated>2024-08-25T14:11:58.607Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;一、语义化版本控制规范&lt;/h1&gt;
+&lt;p&gt;语义化版本控制规范（SemVer）是一套跨语言的语义化版本号标准。下图所示为语义化版本号示例：&lt;br&gt;
+&lt;img</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="版本管理" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E7%89%88%E6%9C%AC%E7%AE%A1%E7%90%86/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx容器创建</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2023/05/15/nginx%E5%AE%B9%E5%99%A8%E5%88%9B%E5%BB%BA/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2023/05/15/nginx%E5%AE%B9%E5%99%A8%E5%88%9B%E5%BB%BA/</id>
+    <published>2023-05-15T02:23:35.000Z</published>
+    <updated>2024-08-25T14:11:58.644Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;通过 shell 脚本，对 docker 环境下的 nginx 容器进行创建及运行。&lt;/p&gt;
+&lt;figure class=&quot;highlight shell&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span</summary>
+        
+      
+    
+    
+    
+    <category term="服务器" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="nginx" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>数据可视化大屏自适应实现</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2023/01/06/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F%E8%87%AA%E9%80%82%E5%BA%94%E5%AE%9E%E7%8E%B0/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2023/01/06/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%A4%A7%E5%B1%8F%E8%87%AA%E9%80%82%E5%BA%94%E5%AE%9E%E7%8E%B0/</id>
+    <published>2023-01-06T08:15:25.000Z</published>
+    <updated>2024-08-25T14:11:58.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我们在实施数据可视化大屏项目的开发过程中，无可避免地会遇到不同屏幕分辨率下大屏页面自适应显示的问题。通过对 css3 中 transform:scale()接口的使用，我们可以较为简单地解决大屏页面自适应问题。&lt;/p&gt;
+&lt;p&gt;基于</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="数据可视化" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Android内存分析—Memory Profiler</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2022/03/28/Android%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E2%80%94Memory%20Profiler/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2022/03/28/Android%E5%86%85%E5%AD%98%E5%88%86%E6%9E%90%E2%80%94Memory%20Profiler/</id>
+    <published>2022-03-28T02:26:35.000Z</published>
+    <updated>2024-08-25T14:11:58.620Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;一、内存优化概念&lt;/h1&gt;
+&lt;p&gt;内存优化一直是一个很重要但却缺乏关注的点，内存作为程序运行最重要的资源之一，需要运行过程中做到合理的资源分配与回收，不合理的内存占用轻则使得用户应用程序运行卡顿、ANR、黑屏，重则导致用户应用程序发生 OOM（out of</summary>
+        
+      
+    
+    
+    
+    <category term="安卓" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%AE%89%E5%8D%93/"/>
+    
+    
+    <category term="Android" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>ADB Interface安装与作用</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2022/02/24/adbInterface%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%9C%E7%94%A8/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2022/02/24/adbInterface%E5%AE%89%E8%A3%85%E4%B8%8E%E4%BD%9C%E7%94%A8/</id>
+    <published>2022-02-24T02:26:35.000Z</published>
+    <updated>2024-08-25T14:11:58.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;ADB</summary>
+        
+      
+    
+    
+    
+    <category term="安卓" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%AE%89%E5%8D%93/"/>
+    
+    
+    <category term="Android" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/Android/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>大数据时代：生活、工作与思维的大变革</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2022/01/14/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%EF%BC%9A%E7%94%9F%E6%B4%BB%E3%80%81%E5%B7%A5%E4%BD%9C%E4%B8%8E%E6%80%9D%E7%BB%B4%E7%9A%84%E5%A4%A7%E5%8F%98%E9%9D%A9/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2022/01/14/%E5%A4%A7%E6%95%B0%E6%8D%AE%E6%97%B6%E4%BB%A3%EF%BC%9A%E7%94%9F%E6%B4%BB%E3%80%81%E5%B7%A5%E4%BD%9C%E4%B8%8E%E6%80%9D%E7%BB%B4%E7%9A%84%E5%A4%A7%E5%8F%98%E9%9D%A9/</id>
+    <published>2022-01-14T03:26:35.000Z</published>
+    <updated>2024-08-25T14:11:58.639Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h3 id=&quot;当今社会因为大数据的出现，而具备了一种新型能力&quot;&gt;当今社会因为大数据的出现，而具备了一种新型能力&lt;/h3&gt;
+&lt;p&gt;以一种前所未有的方式，通过对海量数据进行分析，获得有巨大价值的产品和服务，或深刻的洞见。&lt;/p&gt;
+&lt;h3</summary>
+        
+      
+    
+    
+    
+    <category term="读书" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E8%AF%BB%E4%B9%A6/"/>
+    
+    
+    <category term="大数据" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E5%A4%A7%E6%95%B0%E6%8D%AE/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>uni-app框架使用指南</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2021/12/01/uni-app%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2021/12/01/uni-app%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/</id>
+    <published>2021-12-01T06:34:35.000Z</published>
+    <updated>2024-08-25T14:11:58.619Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1&gt;简述&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://uniapp.dcloud.io/&quot;&gt;uni-app&lt;/a&gt; 是一个基于 &lt;a href=&quot;https://cn.vuejs.org/&quot;&gt;Vue&lt;/a&gt; 的前端开发框架。同时它整合了</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="uni-app" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/uni-app/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>nginx使用小结</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2021/10/10/nginx%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2021/10/10/nginx%E4%BD%BF%E7%94%A8%E5%B0%8F%E7%BB%93/</id>
+    <published>2021-10-10T01:23:35.000Z</published>
+    <updated>2024-08-25T14:11:58.614Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;简介&quot;&gt;简介&lt;/h2&gt;
+&lt;p&gt;nginx是一款高性能、轻量级的Http和反向代理web服务器软件。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="服务器" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E6%9C%8D%E5%8A%A1%E5%99%A8/"/>
+    
+    
+    <category term="nginx" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/nginx/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>css3实现毛玻璃效果</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2021/06/10/css3%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2021/06/10/css3%E5%AE%9E%E7%8E%B0%E6%AF%9B%E7%8E%BB%E7%92%83%E6%95%88%E6%9E%9C/</id>
+    <published>2021-06-10T09:30:10.000Z</published>
+    <updated>2024-08-25T14:11:58.639Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;我们可以通过 css3 中的 filter:blur()和 backdrop-filter:blur()接口实现毛玻璃效果。&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="web前端" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/web%E5%89%8D%E7%AB%AF/"/>
+    
+    
+    <category term="css3" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/css3/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>WebGL技术小结</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2020/04/20/WebGL%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2020/04/20/WebGL%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-04-20T02:18:39.000Z</published>
+    <updated>2024-08-25T14:11:58.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="浏览器" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器存储方式小结</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2020/03/28/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F%E5%B0%8F%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2020/03/28/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%AD%98%E5%82%A8%E6%96%B9%E5%BC%8F%E5%B0%8F%E7%BB%93/</id>
+    <published>2020-03-28T05:56:50.000Z</published>
+    <updated>2024-08-25T14:11:58.641Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本文以新版谷歌浏览器为例，对Cookie、SessionStorage、LocalStorage、IndexedDB这4种浏览器存储方式进行小结。由于浏览器同源策略的限制，不同域下对应的存储内容无法修改和访问。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="浏览器" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器缓存机制</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2020/02/25/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2020/02/25/%E6%B5%8F%E8%A7%88%E5%99%A8%E7%BC%93%E5%AD%98%E6%9C%BA%E5%88%B6/</id>
+    <published>2020-02-25T08:28:30.000Z</published>
+    <updated>2024-08-26T13:12:25.840Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="浏览器" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>浏览器基本原理</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2020/01/10/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2020/01/10/%E6%B5%8F%E8%A7%88%E5%99%A8%E5%9F%BA%E6%9C%AC%E5%8E%9F%E7%90%86/</id>
+    <published>2020-01-10T01:45:35.000Z</published>
+    <updated>2024-08-25T14:11:58.634Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;前言&quot;&gt;前言&lt;/h2&gt;
+&lt;p&gt;本文以主流的新版谷歌浏览器为例，结合相关参考资料，对浏览器原理进行简要分析。不同的类型或者版本的浏览器的实现实现都有所差异，本文不做对比讨论。&lt;/p&gt;
+&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="浏览器" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E6%B5%8F%E8%A7%88%E5%99%A8/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>认证授权技术小结</title>
+    <link href="https://moneyhua.github.io/yiyuanqian_blog/2019/12/19/%E8%AE%A4%E8%AF%81%E6%8E%88%E6%9D%83%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%BB%93/"/>
+    <id>https://moneyhua.github.io/yiyuanqian_blog/2019/12/19/%E8%AE%A4%E8%AF%81%E6%8E%88%E6%9D%83%E6%8A%80%E6%9C%AF%E5%B0%8F%E7%BB%93/</id>
+    <published>2019-12-19T02:20:35.000Z</published>
+    <updated>2024-08-25T14:11:58.642Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="其他" scheme="https://moneyhua.github.io/yiyuanqian_blog/categories/%E5%85%B6%E4%BB%96/"/>
+    
+    
+    <category term="认证授权" scheme="https://moneyhua.github.io/yiyuanqian_blog/tags/%E8%AE%A4%E8%AF%81%E6%8E%88%E6%9D%83/"/>
+    
+  </entry>
+  
+</feed>
